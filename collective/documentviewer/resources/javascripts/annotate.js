@@ -140,7 +140,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#annotations a.remove').live('click', function(){
+    $('#annotations a.remove').on('click', function(){
         var link = $(this);
         var id = parseInt($(this).attr('rel'));
         var page = parseInt($(this).attr('page'));
@@ -254,7 +254,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('#sections a.remove').live('click', function(){
+    $('#sections a.remove').on('click', function(){
         var link = $(this);
         var titleval = $(this).attr('title');
         var pageval = parseInt($(this).attr('rel'));
